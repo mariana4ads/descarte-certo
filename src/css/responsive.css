@@ -1,0 +1,125 @@
+@media (max-width: 970px) {
+    header {
+    height: 70px;
+    }
+
+    .cabecalho {
+    padding: 0 20px;
+    }
+
+    footer p {
+    margin-right: 20px;
+    }
+
+}
+
+@media (max-width: 740px) {
+    body {
+    background: url(../images/bg-mobile.jpg) no-repeat center center fixed;
+    background-size: cover;
+    } 
+
+    .cabecalho {
+        padding: 0 20px;
+        position: relative;
+    }
+
+    .hamburger {
+        display: flex;
+        margin-left: auto;
+    }
+
+    .cabecalho nav ul {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 0px;
+        background-color: #8A9A75;
+        padding: 10px;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .cabecalho nav ul.show {
+        display: flex;
+    }
+
+    .cabecalho nav a {
+        font-size: 14px;
+    }
+
+    .cabecalho nav ul li:not(:last-child)::after {
+        content: "";
+    }
+
+    main.corpo-projeto{
+        padding: 1.5rem 1rem;
+    }
+
+    footer {
+    text-align: center;
+    width: 100%;
+    }
+
+    footer p {
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 470px) {
+    .formulario h1 {
+        font-size: 20px;
+        margin-bottom: 9px;
+    }
+
+    .formulario h2 {
+        font-size: 14px;
+    }
+
+    .formulario h3 {
+        font-size: 13px;
+    }
+
+    .formulario h4 {
+        font-size: 12px;
+    }
+
+    .formulario p {
+        font-size: 11px;
+    }
+
+    .pergunta h2 {
+        font-size: 14px;
+    }
+
+    select, button {
+        padding: 3px;
+        font-size: 12px;
+        width: 200px;
+    }
+
+    .btn-pesquisa {
+        width: 70px;
+    }
+
+    .indice {
+        text-align: justify;
+        margin-bottom: 8px;
+        padding: 5px;
+    }
+
+    .redes-sociais {
+    gap: 10px;
+    margin-top: 30px;
+    }
+
+    .redes-sociais a i {
+        color: #ffffff;
+        border: 1px solid #ffffff;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        padding: 5px;
+    }
+
+}

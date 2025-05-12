@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DescarteCerto">
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="src/images/icon.png">
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
+
+    <title>Descarte Certo - Itapevi/SP</title>
+</head>
+
+<body>
+<header class="cabecalho">
+    <div class="logo">
+        <img src="./src/images/logo2.png" alt="Logotipo do Descarte Certo">
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="./pages/guia-decarte.html">Guia de Descarte</a></li>
+            <li><a href="./pages/sobre.html">Sobre o Projeto</a></li>
+            <li><a href="./pages/contato.html">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <main class="corpo-projeto">
+        <section class="formulario">
+            <h1 id="saudacao"></h1>
+            <p>Em Itapevi/SP, o descarte certo começa aqui. Encontre o ponto de coleta mais próximo de acordo com o tipo de material e o seu bairro.</p>
+
+            <div class="pergunta">
+                <label for="material"><h2>1. Qual tipo de material você deseja descartar?</h2></label>
+                <select id="material" name="material" required>
+                    <option value="" disabled selected>Selecione o material</option>
+                    <option value="eletrodomesticos">Eletrodomésticos</option>
+                    <option value="eletronicos">Eletrônicos</option>
+                    <option value="entulho">Entulho de obra</option>
+                    <option value="medicamentos">Medicamentos vencidos</option>
+                    <option value="moveis">Móveis usados</option>
+                    <option value="oleo">Óleo de cozinha</option>
+                    <option value="pilhas">Pilhas e baterias</option>
+                    <option value="pneus">Pneus velhos e usados</option>
+                    <option value="reciclaveis">Recicláveis (papel, plástico, vidro, metal)</option>
+                    <option value="seringas">Seringas e agulhas usadas</option>
+                </select>
+
+                <div data-material="eletrodomesticos" class="descricao-material">
+                    <p>Geladeiras, fogões e máquinas de lavar contêm componentes tóxicos e gases refrigerantes. Se descartados incorretamente, podem contaminar o solo e a água. Para mais informações acesse o <a href="guia-descarte.html">Guia de Descarte</a>.</p>
+                </div>
+                
+                <div data-material="eletronicos" class="descricao-material">
+                    <p>Celulares, computadores e tablets possuem metais pesados como chumbo e mercúrio em suas placas. Seu descarte incorreto causa danos ambientais graves. Para mais informações acesse o <a href="guia-descarte.html">Guia de Descarte</a>.</p>
+                </div>
+                
+                <div data-material="entulho" class="descricao-material">
+                    <p>Restos de construção civil como tijolos, argamassa e cerâmicas. Quando misturado com outros resíduos, dificulta a reciclagem e ocupa muito espaço. Para mais informações acesse o <a href="guia-descarte.html">Guia de Descarte</a>.</p>
+                </div>
+                
+                <div data-material="medicamentos" class="descricao-material">
+                    <p>Remédios vencidos ou sobras podem contaminar a água e o solo, além de causar resistência microbiana quando descartados incorretamente. Para mais informações acesse o <a href="guia-descarte.html">Guia de Descarte</a>.</p>
+                </div>
+                
+                <div data-material="moveis" class="descricao-material">
+                    <p>Sofás, colchões e armários velhos ocupam muito volume. Seus materiais (espumas, tecidos e madeiras) demoram décadas para se decompor. Para mais informações acesse o <a href="guia-descarte.html">Guia de Descarte</a>.</p>
+                </div>
+                
+                <div data-material="oleo" class="descricao-material">
+                    <p>1 litro de óleo de cozinha pode contaminar 25 mil litros de água. Quando despejado na pia, entope tubulações e polui rios. Para mais informações acesse o <a href="guia-descarte.html">Guia de Descarte</a>.</p>
+                </div>
+                
+                <div data-material="pilhas" class="descricao-material">
+                    <p>Contêm metais pesados como cádmio e níquel. Quando corroídas, liberam substâncias que contaminam o solo por até 50 anos. Para mais informações acesse o <a href="guia-descarte.html">Guia de Descarte</a>.</p>
+                </div>
+                
+                <div data-material="pneus" class="descricao-material">
+                    <p>Pneus velhos acumulam água e podem virar criadouros de mosquitos como o Aedes aegypti. Quando queimados, liberam toxinas perigosas. Para mais informações acesse o <a href="guia-descarte.html">Guia de Descarte</a>.</p>
+                </div>
+
+                <div data-material="reciclaveis" class="descricao-material">
+                    <p>Papel, plástico, vidro e metal podem ser transformados em novos produtos. Quando limpos e separados corretamente, reduzem a extração de recursos naturais. Para mais informações acesse o <a href="guia-descarte.html">Guia de Descarte</a>.</p>
+                </div>
+                
+                <div data-material="seringas" class="descricao-material">
+                    <p>Agulhas, seringas e lancetas usadas apresentam risco biológico. Se descartadas no lixo comum, podem causar acidentes e transmitir doenças. Para mais informações acesse o <a href="guia-descarte.html">Guia de Descarte</a>.</p>
+                </div>
+            </div>
+
+            <div class="pergunta">
+                <label for="bairro"><h2>2. Qual o seu bairro?</h2></label>
+                <select id="bairro" name="bairro">
+                    <option value="" disabled selected>Selecione seu bairro</option>
+                    <option>Alto da Colina</option>
+                    <option>Amador Bueno</option>
+                    <option>Centro</option>
+                    <option>Vila Nova Itapevi - Cidade da Saúde</option>
+                    <option>Cohab I e II</option>
+                    <option>Condomínio Nova São Paulo</option>
+                    <option>Jardim Briquet</option>
+                    <option>Jardim Nova Itapevi</option>
+                    <option>Jardim Paulista</option>
+                    <option>Jardim Portela</option>
+                    <option>Jardim Rosemary</option>
+                    <option>Jardim Santa Rita</option>
+                    <option>Jardim Vitápolis</option>
+                    <option>Parque Boa Esperança</option>
+                    <option>Parque Itamarati</option>
+                    <option>Parque Suburbano</option>
+                    <option>Quatro Encruzilhadas</option>
+                    <option>Refúgio dos Pinheiros</option>
+                    <option>Vila Dr. Cardoso</option>
+                </select>
+                <button class="btn-pesquisa" type="button">Pesquisar</button>
+            </div>
+            <div class="resultados">
+            </div>
+            <div class="nova-pesquisa">
+                <button onclick="location.reload()" class="btn-reload">Nova Pesquisa</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Site desenvolvido por Mariana Rocha</p>
+    </footer>
+
+    <script src="./src/js/index.js"></script>
+    <script src="./src/js/bancoDados.js"></script>
+    <script src="../src/js/hamburguer.js"></script>
+
+</body>
+</html>

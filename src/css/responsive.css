@@ -67,6 +67,13 @@
 }
 
 @media (max-width: 470px) {
+    body {
+        min-height: 100svh;
+    }
+
+    section.formulario {
+    max-height: 65vh;
+    }
     .formulario h1 {
         font-size: 20px;
         margin-bottom: 9px;
@@ -122,4 +129,7 @@
         padding: 5px;
     }
 
+
+
+    
 }

@@ -13,7 +13,7 @@
 
 }
 
-@media (max-width: 740px) {
+@media (max-width: 760px) {
     body {
     background: url(../images/bg-mobile.jpg) no-repeat center center fixed;
     background-size: cover;

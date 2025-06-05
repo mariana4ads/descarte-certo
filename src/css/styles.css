@@ -111,6 +111,11 @@ select, button {
     font-weight: bold;
     cursor: pointer;
     margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-pesquisa:hover {
+    background-color: #0d5f2f;
 }
 
 .btn-reload {
@@ -121,6 +126,11 @@ select, button {
     font-weight: bold;
     cursor: pointer;
 }
+
+.btn-reload:hover {
+    background-color: #701010;
+}
+
 
 .descricao-material {
     display: none; 
@@ -205,13 +215,13 @@ select, button {
 .line {
     width: 30px;
     height: 4px;
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 2px;
 }
 
 footer {
     background-color: rgb(5, 10, 5, 0.2);;
-    color: white;
+    color: #ffffff;
     font-size: 12px;
     padding: 6px 0px;
     text-align: end;

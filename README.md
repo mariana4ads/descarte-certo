@@ -2,7 +2,7 @@
 
 **Descarte Certo** é uma página web desenvolvida como parte da disciplina **Atividades de Extensão: Integração de Competências em Análise e Desenvolvimento de Sistemas**.
 
-Essa disciplina tem como foco a **atuação junto à comunidade**, por meio da implementação de um projeto com **impacto coletivo**, voltado para **soluções reais e sustentáveis** que contribuam com **melhorias para a sociedade**. Neste sempestre o projeto a ser desenvolvido deveria estar ligado ao tema **meio ambiente e saúde** e a **ODS 6: Água Potável e Saneamento**.
+Essa disciplina tem como foco a **atuação junto à comunidade**, por meio da implementação de um projeto com **impacto coletivo**, voltado para **soluções reais e sustentáveis** que contribuam com **melhorias para a sociedade**. Neste semestre o projeto desenvolvido deveria estar ligado ao tema **meio ambiente e saúde** e de acordo com o **ODS 6: Água Potável e Saneamento**.
 
 ---
 
